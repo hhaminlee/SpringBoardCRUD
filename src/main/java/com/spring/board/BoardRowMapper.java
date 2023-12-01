@@ -1,6 +1,5 @@
 package com.spring.board;
 
-import com.spring.board.BoardVO;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;

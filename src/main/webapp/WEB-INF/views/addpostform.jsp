@@ -8,24 +8,24 @@
 </head>
 <body>
 
-<h1>Add New Post</h1>
+<h1>게시물 추가</h1>
 <form action="addok" method="post">
     <table id="edit">
         <tr>
-            <td>Title:</td>
+            <td>제목:</td>
             <td><input type="text" name="title"/></td>
         </tr>
         <tr>
-            <td>Writer:</td>
+            <td>작성자:</td>
             <td><input type="text" name="writer"/></td>
         </tr>
         <tr>
-            <td>Content:</td>
-            <td><textarea cols="50" rows="5" name="content"></textarea></td>
+            <td>카테고리:</td>
+            <td><input type="text" name="category"/></td>
         </tr>
         <tr>
-            <td><a href="list.jsp">View All Records</a></td>
-            <td align="right"><input type="submit" value="Add Post"/></td>
+            <td>내용:</td>
+            <td><textarea cols="50" rows="5" name="content"></textarea></td>
         </tr>
     </table>
     <button type="button" onclick="location.href='list'">목록보기</button>

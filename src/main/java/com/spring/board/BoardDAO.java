@@ -12,7 +12,7 @@ public class BoardDAO {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 	public int insertBoard(BoardVO vo) {
-		String sql = "insert into BOARD (title, writer, content) values ("
+		String sql = "insert into BOARD (title, writer, content, category) values ("
 				+"'" + vo.getTitle() + "',"
 				+"'" + vo.getWriter() + "',"
 				+"'" + vo.getContent() + "',"

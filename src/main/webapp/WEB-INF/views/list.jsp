@@ -39,7 +39,7 @@
     <script>
         function delete_ok(id) {
             var a = confirm("정말로 삭제하겠습니까?");
-            if (a) location.href = 'deletepost.jsp?id=' + id;
+            if (a) location.href = 'deleteok/' + id;
         }
     </script>
 </head>
@@ -48,12 +48,13 @@
 <table id="list" width="90%">
     <tr>
         <th>Id</th>
-        <th>Title</th>
-        <th>Writer</th>
-        <th>Content</th>
-        <th>Regdate</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>제목</th>
+        <th>작성자</th>
+        <th>내용</th>
+        <th>카테고리</th>
+        <th>등록일자</th>
+        <th>수정</th>
+        <th>삭제</th>
     </tr>
     <c:forEach items="${list}" var="u">
         <tr>
@@ -61,12 +62,13 @@
             <td>${u.getTitle()}</td>
             <td>${u.getWriter()}</td>
             <td>${u.getContent()}</td>
+            <td>${u.getCategory()}</td>
             <td>${u.getRegdate()}</td>
-            <td><a href="editform/${u.getSeq()}">Edit</a></td>
-            <td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
+            <td><a href="editform/${u.getSeq()}">수정</a></td>
+            <td><a href="javascript:delete_ok('${u.getSeq()}')">삭제</a></td>
         </tr>
     </c:forEach>
 </table>
-<br/><a href="add">Add New Post</a>
+<br/><a href="add">새로운 게시물 추가</a>
 </body>
 </html>
