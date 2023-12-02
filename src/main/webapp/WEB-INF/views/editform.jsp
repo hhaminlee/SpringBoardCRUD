@@ -5,11 +5,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Edit Form</title>
+    <title>수정페이지</title>
 </head>
 <body>
 
-<h1>Edit Form</h1>
+<h1>수정 페이지</h1>
 <form:form modelAttribute="u" method="post" action="../editok">
     <form:hidden path="seq"/>
     <table id="edit">

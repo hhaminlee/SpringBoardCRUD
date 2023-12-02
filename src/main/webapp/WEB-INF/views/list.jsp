@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>free board</title>
+    <title>22000594 이하민</title>
     <style>
         #list {
             font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -44,7 +44,7 @@
     </script>
 </head>
 <body>
-<h1>자유게시판</h1>
+<h1>예스 24 베스트셀러</h1>
 <table id="list" width="90%">
     <tr>
         <th>Id</th>
@@ -53,6 +53,7 @@
         <th>내용</th>
         <th>카테고리</th>
         <th>등록일자</th>
+        <th>상세정보</th>
         <th>수정</th>
         <th>삭제</th>
     </tr>
@@ -64,6 +65,7 @@
             <td>${u.getContent()}</td>
             <td>${u.getCategory()}</td>
             <td>${u.getRegdate()}</td>
+            <td><a href="view/${u.getSeq()}">상세정보</a></td>
             <td><a href="editform/${u.getSeq()}">수정</a></td>
             <td><a href="javascript:delete_ok('${u.getSeq()}')">삭제</a></td>
         </tr>
